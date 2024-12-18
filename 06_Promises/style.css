@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfeef8; /* Рожевий фон */
+}
+
+h1 {
+    text-align: center;
+    color: #4749d1; /* Темно-рожевий */
+    padding: 10px;
+    background-color: #ccd1ff;
+    margin: 0;
+}
+
+#users-container, #todos-container {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #8597ff;
+    border-radius: 8px;
+    background-color: #cccfff;
+}
+
+h2 {
+    color: #372d70;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #e6edff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+li:hover {
+    background-color: #99acff;
+}
+
+li.selected {
+    background-color: #6e4dff;
+    color: white;
+    font-weight: bold;
+}
