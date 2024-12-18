@@ -1,0 +1,38 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+h2 {
+    text-align: center;
+}
+.image {
+    border: 2px solid rgb(2, 8, 2);
+    border-radius: 15%;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+.product {
+    text-align: center;
+    margin: 10px;
+}
+h3 {
+    text-align: center;
+}
+.buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #45a049;
+}
