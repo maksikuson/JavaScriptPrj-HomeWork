@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub User Info</title>
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="search">
+      <input type="text" id="username" placeholder="Search login">
+      <button onclick="getUserInfo()">Search</button>
+    </div>
+    <div class="error" id="error"></div>
+    <div class="user-info" id="userInfo">
+      <div class="row">
+        <img id="avatar" alt="Profile picture">
+        <div class="details">
+          <h3 id="name">Name: </h3>
+          <p id="login">Login: </p>
+        </div>
+      </div>
+      <div class="row">
+        <span class="label">URL to GitHub:</span>
+        <a id="htmlUrl" href="#" target="_blank">Profile</a>
+      </div>
+      <div class="row">
+        <span class="label">Blog:</span>
+        <a id="blog" href="#" target="_blank">Blog</a>
+      </div>
+      <div class="row">
+        <span class="label">City:</span>
+        <span id="location">N/A</span>
+      </div>
+      <div class="row">
+        <span class="label">Email:</span>
+        <span id="email">N/A</span>
+      </div>
+      <div class="row">
+        <span class="label">Followers:</span>
+        <span id="followers">0</span>
+      </div>
+      <div class="row">
+        <span class="label">Following:</span>
+        <span id="following">0</span>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
