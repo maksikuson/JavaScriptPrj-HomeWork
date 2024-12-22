@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Weather</h1>
+      <div class="city-container">
+        <input type="text" id="city-input" placeholder="Search for a city...">
+        <p id="selected-city">Selected city: <span id="city-name">Kyiv</span></p>
+      </div>
+    </header>
+    <nav>
+      <button class="tab active" data-tab="today">Today</button>
+      <button class="tab" data-tab="forecast">5-Day Forecast</button>
+    </nav>
+    <main>
+      <section id="today">
+        <div id="current-weather" class="card">
+          <h2>Current Weather</h2>
+          <div class="current-weather-details">
+            <div id="current-icon"></div>
+            <div>
+              <p id="current-temp"></p>
+              <p id="current-description"></p>
+            </div>
+          </div>
+          <div class="extra-details">
+            <p>Feels like: <span id="feels-like"></span></p>
+            <p>Sunrise: <span id="sunrise"></span></p>
+            <p>Sunset: <span id="sunset"></span></p>
+            <p>Day Length: <span id="day-length"></span></p>
+          </div>
+        </div>
+        <div id="hourly-forecast">
+          <h2>Hourly Forecast</h2>
+          <table class="hourly-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Icon</th>
+                <th>Description</th>
+                <th>Temp (°C)</th>
+                <th>Feels Like (°C)</th>
+                <th>Wind</th>
+              </tr>
+            </thead>
+            <tbody id="hourly-forecast-body">
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="forecast" style="display: none;">
+        <h2>5-Day Forecast</h2>
+        <div id="forecast-days" class="forecast-days-container">
+        </div>        
+        <div id="daily-details" style="display: none;">
+          <h3 id="selected-day-name"></h3>
+          <table class="hourly-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Icon</th>
+                <th>Description</th>
+                <th>Temp (°C)</th>
+                <th>Feels Like (°C)</th>
+                <th>Wind</th>
+              </tr>
+            </thead>
+            <tbody id="daily-forecast-body">
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
